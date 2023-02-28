@@ -10,3 +10,12 @@ import './styles/app.css';
 
 // start the Stimulus application
 import './bootstrap';
+
+// homer page to login/sing up
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Home from './components/Home';
+import './styles/app.css';
+
+ReactDOM.render(<Router><Home /></Router>, document.getElementById('root'));
