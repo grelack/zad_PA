@@ -4,11 +4,14 @@
 
 {% block body %}
 
-<div class="hello__box">
-    <h1>Hello! ✅</h1>
-</div>
+{% if param_message %}
+    <div id="params" class="params">
+        <h3>{{ param_message}}</h3>
+    </div>
+    
+{% endif %}
+
 
 <div id="root"></div>
-
 
 {% endblock %}
